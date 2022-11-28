@@ -1,0 +1,185 @@
+body {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 14px;
+    max-height: 100vh;
+    max-width: 100vw;
+    margin: 0;
+}
+
+.app-title {
+    padding: 1vh 0;
+    font-size: 27px;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgb(138, 165, 82);
+}
+
+.body-table {
+    height: 82vh;
+    width: 90vw;
+    margin: 0 3vw;
+    padding: 3vh 2vw;
+}
+
+.body-column  {
+    height: 82vh;
+}
+
+.body-column.body-right-column {
+    overflow: scroll;
+}
+
+.body-left-column {
+    float: right;
+    width: 30vw;
+}
+
+.body-right-column {
+    float: left;
+    width: 58vw;
+    cursor: default;
+}
+
+.clear {
+    clear: both;
+}
+
+.add-token {
+    height: 5%;
+    margin-bottom: 5%;
+    border: 1px solid black;
+}
+
+.add-token-input {
+    width: 83%;
+    float: left;
+}
+
+.add-token-button {
+    width: 17%;
+    padding: 1%;
+    float: left;
+    background-color: #ffffff;
+    border-left: none;
+    cursor: pointer;
+}
+
+.text-area {
+    resize: none;
+    width: 100%;
+    border: 1px solid #000000;
+    background-color: #ffffff;
+}
+
+.medium-title {
+    font-size: medium;
+}
+
+.valid-tokens-title {
+    position: relative;
+    width: fit-content;
+    background-color: #ffffff;
+}
+
+.valid-tokens {
+    margin-bottom: 0;
+    height: 20vh;
+    border-bottom: none;
+}
+
+.validate-tokens {
+    height: 30vh;
+    margin-bottom: 0%;
+}
+
+.validate-tokens.error {
+    border-color: #ff0000;
+    outline: none;
+}
+
+.sugestion-area {
+    width: 100%;
+    height: 12%;
+    margin-bottom: 6%;
+    cursor: default;
+}
+
+.sugestion-letters {
+    border: 1px solid #000000;
+    margin-top: 0px;
+    padding: 8px 5px 5px 5px;
+    text-align: center;
+ }
+
+.automato-table {
+    max-height: 82vh;
+    width: 100%;
+    max-width: 58vw;
+    overflow: scroll;
+    font-family: monospace;
+}
+
+.automato-table, .automato-column, .automato-cell, .automato-column-id {
+    border-collapse: collapse;
+    border: 1px solid #000000;
+}
+
+.automato-body {
+    max-width: inherit;
+    border-collapse: collapse;
+}
+
+.automato-row {
+    max-width: inherit;
+}
+
+.automato-column {
+    min-width: 0;
+    max-width: 0;
+    background-color: rgb(95, 114, 57);
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: large;
+}
+
+.automato-column-id {
+    min-width: 0;
+    max-width: 0;
+    background-color: rgb(95, 114, 57);
+    color: #ffffff;
+    text-transform: lowercase;
+    font-size: small;
+}
+
+.automato-cell {
+    min-width: 0;
+    max-width: 0;
+    min-height: 10px;
+    background-color: #ffffff;
+    color: #000000;
+    text-transform: lowercase;
+    text-align: center;
+    font-size: small;
+}
+
+.automato-row.actual-state .automato-cell{
+    color: #ffffff;
+    background-color: darkslategray;
+}
+
+.static-footer {
+    width: 100vw;
+    height: 4vh;
+    font-size: 16px;
+}
+
+.copyrights {
+    height: 4vh;
+    margin: 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+.hide {
+    display: none;
+}

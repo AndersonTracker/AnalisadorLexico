@@ -1,0 +1,133 @@
+<html>
+    <header>
+        <script src="assets/js/jquery-3.2.1.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="assets/css/main.css"/>
+
+        <title>
+            Analisador Lexico - Anderson Pereira da Silva
+        </title>    
+    </header>
+
+    <body oncontextmenu="return false;">
+
+        <div class="title-div">
+            <p class="app-title">Analizador Lexico</p>
+        </div>
+        
+        <div class="body-table">
+            <div class="body-column body-left-column">
+            <!-- Valid Tokens -->
+                <div class="valid-tokens-area">
+                    <div class="medium-title valid-tokens-title">
+                        Palavras Validas:
+                    </div>
+                    <textarea class="text-area valid-tokens" disabled="disabled"
+                            autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"
+                            placeholder="Sem palavras tokens adicionadas" oncontextmenu="return false;"></textarea>
+                </div>
+
+            <!-- Valid Tokens end -->
+
+            <!-- Add new Tokens -->
+                <input class="add-token add-token-input" type="text" placeholder="Novo Token..."/>
+                <input class="add-token add-token-button" type="button" title="Adicionar Token" value="Adicionar" onclick="DisplayManager.addToken();"/>
+                <div class="clear"></div>
+            <!-- Add new Tokens end -->
+
+            <div class="sugestion-area">
+                <div class="medium-title sugestion-title">
+                    Sugestões de entrada:
+                </div>
+                <div class="sugestion-letters">
+                    <p class="sugestion-line"></p>
+                </div>
+            </div>
+            <!-- Validate tokens -->
+                <div class="medium-title validate-tokens-title">
+                    Buscar/Validar Tokens:
+                </div>
+                <textarea class="text-area validate-tokens"
+                        autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"
+                        placeholder="Digite o texto a ser validado aqui" oncontextmenu="return false;"></textarea>
+            <!-- Validate tokens end -->
+            </div>
+
+            <div class="body-column body-right-column">
+            <!-- Automato -->
+                <table class="automato-table" cellspacing="0">
+                    <tbody class="automato-body">
+                        <tr id="automatoHeader" class="automato-row">
+                            <th id="id" class="automato-column">ID</th>
+                            <th id="a" class="automato-column">a</th>
+                            <th id="b" class="automato-column">b</th>
+                            <th id="c" class="automato-column">c</th>
+                            <th id="d" class="automato-column">d</th>
+                            <th id="e" class="automato-column">e</th>
+                            <th id="f" class="automato-column">f</th>
+                            <th id="g" class="automato-column">g</th>
+                            <th id="h" class="automato-column">h</th>
+                            <th id="i" class="automato-column">i</th>
+                            <th id="j" class="automato-column">j</th>
+                            <th id="k" class="automato-column">k</th>
+                            <th id="l" class="automato-column">l</th>
+                            <th id="m" class="automato-column">m</th>
+                            <th id="n" class="automato-column">n</th>
+                            <th id="o" class="automato-column">o</th>
+                            <th id="p" class="automato-column">p</th>
+                            <th id="q" class="automato-column">q</th>
+                            <th id="r" class="automato-column">r</th>
+                            <th id="s" class="automato-column">s</th>
+                            <th id="t" class="automato-column">t</th>
+                            <th id="u" class="automato-column">u</th>
+                            <th id="v" class="automato-column">v</th>
+                            <th id="w" class="automato-column">w</th>
+                            <th id="x" class="automato-column">x</th>
+                            <th id="y" class="automato-column">y</th>
+                            <th id="z" class="automato-column">z</th>
+                        </tr>
+                        <tr id="q0" class="automato-row">
+                            <th id="q0-id" class="automato-column-id" title="Estado inicial">&#9205;q0</th>
+                            <td id="q0-a" class="automato-cell">-</td>
+                            <td id="q0-b" class="automato-cell">-</td>
+                            <td id="q0-c" class="automato-cell">-</td>
+                            <td id="q0-d" class="automato-cell">-</td>
+                            <td id="q0-e" class="automato-cell">-</td>
+                            <td id="q0-f" class="automato-cell">-</td>
+                            <td id="q0-g" class="automato-cell">-</td>
+                            <td id="q0-h" class="automato-cell">-</td>
+                            <td id="q0-i" class="automato-cell">-</td>
+                            <td id="q0-j" class="automato-cell">-</td>
+                            <td id="q0-k" class="automato-cell">-</td>
+                            <td id="q0-l" class="automato-cell">-</td>
+                            <td id="q0-m" class="automato-cell">-</td>
+                            <td id="q0-n" class="automato-cell">-</td>
+                            <td id="q0-o" class="automato-cell">-</td>
+                            <td id="q0-p" class="automato-cell">-</td>
+                            <td id="q0-q" class="automato-cell">-</td>
+                            <td id="q0-r" class="automato-cell">-</td>
+                            <td id="q0-s" class="automato-cell">-</td>
+                            <td id="q0-t" class="automato-cell">-</td>
+                            <td id="q0-u" class="automato-cell">-</td>
+                            <td id="q0-v" class="automato-cell">-</td>
+                            <td id="q0-w" class="automato-cell">-</td>
+                            <td id="q0-x" class="automato-cell">-</td>
+                            <td id="q0-y" class="automato-cell">-</td>
+                            <td id="q0-z" class="automato-cell">-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="clear"></div>
+        <!-- Automato end -->
+        </div>
+
+        <div class="static-footer">
+            <p class="copyrights">
+                <span class="facebook-profile">
+                    Anderson Pereira da Silva - 11/2022.
+                </span>
+            </p>
+        </div>
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
